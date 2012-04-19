@@ -17,6 +17,7 @@ import javax.swing.JTextArea;
 
 import analyser.AnalisadorLexico;
 import analyser.Buffer;
+import analyser.HashTable;
 import analyser.InputFile;
 import analyser.OutputFile;
 
@@ -133,5 +134,43 @@ public class Main extends JFrame {
 			}
 		});
 		
+		iniciarPalavrasReservadas();
+	}
+	
+	private void iniciarPalavrasReservadas(){
+		//Palavras reservadas do pascal simplificado
+		HashTable.addPalavraReservada("and");
+		HashTable.addPalavraReservada("array");
+		HashTable.addPalavraReservada("begin");
+		HashTable.addPalavraReservada("case");
+		HashTable.addPalavraReservada("const");
+		HashTable.addPalavraReservada("div");
+		HashTable.addPalavraReservada("do");
+		HashTable.addPalavraReservada("downto");
+		HashTable.addPalavraReservada("else");
+		HashTable.addPalavraReservada("end");
+		HashTable.addPalavraReservada("file");
+		HashTable.addPalavraReservada("for");
+		HashTable.addPalavraReservada("function");
+		HashTable.addPalavraReservada("goto");
+		HashTable.addPalavraReservada("if");
+		HashTable.addPalavraReservada("label");
+		HashTable.addPalavraReservada("model");
+		HashTable.addPalavraReservada("nil");
+		HashTable.addPalavraReservada("not");
+		HashTable.addPalavraReservada("of");
+		HashTable.addPalavraReservada("or");
+		HashTable.addPalavraReservada("packed");
+		HashTable.addPalavraReservada("program");
+		HashTable.addPalavraReservada("record");
+		HashTable.addPalavraReservada("repeat");
+		HashTable.addPalavraReservada("set");
+		HashTable.addPalavraReservada("then");
+		HashTable.addPalavraReservada("to");
+		HashTable.addPalavraReservada("type");
+		HashTable.addPalavraReservada("until");
+		HashTable.addPalavraReservada("var");
+		HashTable.addPalavraReservada("while");
+		HashTable.addPalavraReservada("with");
 	}
 }
