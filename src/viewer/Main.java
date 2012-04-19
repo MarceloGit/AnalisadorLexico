@@ -133,6 +133,8 @@ public class Main extends JFrame {
 				}
 			}
 		});
+		
+		iniciarPalavrasReservadas();
 	}
 	
 	private void iniciarPalavrasReservadas(){
